@@ -1,0 +1,45 @@
+# Dependencies and build output
+node_modules/
+out/
+dist/
+.builder-cache/
+.package-library/
+.package-user-data/
+.test-library/
+.user-data/
+.network-test-library/
+.network-test-user-data/
+
+# Local data, models and inference runtimes
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.gguf
+classifier/
+classifier-bundle/
+
+# Generated test artifacts
+.*.png
+.test-artifacts/
+*.log
+coverage/
+
+# Environment and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Release binaries belong in GitHub Releases, not Git history
+*.exe
+*.msi
+*.zip
+*.7z
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
