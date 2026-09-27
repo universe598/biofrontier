@@ -1,0 +1,36 @@
+name: 功能建议
+description: 提议新功能、来源或分类改进
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: 建议类型
+      options:
+        - 信息来源
+        - 筛选与分类
+        - 本地 AI
+        - 外部 API
+        - 阅读与收藏
+        - 界面与性能
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: 数据、费用或兼容性影响
+      description: 如涉及新来源或模型，请附官方文档和许可证链接。
